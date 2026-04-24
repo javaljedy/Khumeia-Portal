@@ -64,7 +64,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-[#000000] text-[#FDBE73]">
         {children}
-        <Analytics /> {/* 2. El componente se coloca aquí para medir todo el sitio */}
+        <Analytics /> {import { Analytics } from "@vercel/analytics/next"}
       </body>
     </html>
   )
