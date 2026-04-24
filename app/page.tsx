@@ -119,18 +119,11 @@ export default function Page() {
                 <span className="uppercase tracking-widest text-sm">Vía Cerritos, Pereira - Risaralda</span>
               </div>
             </div>
-            <a 
-              href="https://maps.app.goo.gl/TwEy1u59OI4Rd__GTU3yBeM" 
-              target="_blank" 
-              className="inline-flex items-center gap-2 text-[#F7941D] hover:text-[#FDBE73] transition-colors uppercase tracking-[0.2em] text-xs font-bold"
-            >
-              Abrir en Google Maps <ExternalLink size={14} />
-            </a>
           </div>
 
           <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all border border-[#FDBE73]/20">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.241!2d-75.796803!3d4.8113455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387dee6232014f%3A0x6305f24d4dd2ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1715000000000!5m2!1ses!2sco" 
+              src="https://maps.app.goo.gl/Ypqhskh7Pg5dA3KfA?g_st=aw" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
