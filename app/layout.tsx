@@ -1,6 +1,6 @@
 import './globals.css'
 import { Cinzel, Montserrat } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'; // 1. Importación necesaria
+import { Analytics } from '@vercel/analytics/next';
 
 // Configuración de fuentes
 const cinzel = Cinzel({ 
@@ -64,7 +64,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-[#000000] text-[#FDBE73]">
         {children}
-        <Analytics /> {/* 2. El componente se coloca aquí para medir todo el sitio */}
+        <Analytics />
       </body>
     </html>
   )
