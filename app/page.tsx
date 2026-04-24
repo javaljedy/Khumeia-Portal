@@ -64,8 +64,7 @@ export default function Page() {
           {/* Contenedor del Mapa con Bordes Redondos */}
           <div className="flex-1 w-full h-[350px] rounded-3xl overflow-hidden border border-[#FDBE73]/20 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-1000 shadow-[0_0_30px_rgba(253,190,115,0.05)]">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.946... (tu link completo)" 
-              width="100%" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0123!2d-75.796803!3d4.8113455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDgnNDAuOCJOIDc1wrA0Nyc0OC41Ilc!5e0!3m2!1ses!2sco!4v1710000000000"               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen 
