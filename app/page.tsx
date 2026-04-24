@@ -52,41 +52,7 @@ export default function Page() {
         <BoutiqueSection />
       </section>
 
-      {/* SECCIÓN CARTA (BASADA EN TU DOCUMENTO) */}
-
-      <section className="py-24 bg-[#050505] px-6 border-y border-[#FDBE73]/5">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          
-          <div className="space-y-6">
-            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Orígenes</h3>
-            <ul className="space-y-4 text-sm font-light">
-              <li><span className="block font-bold">SUDÁN RUMÉ</span> Arándano, regaliz y miel de maple.</li>
-              <li><span className="block font-bold">GESHA</span> Notas de jazmín, lima y té verde.</li>
-              <li><span className="block font-bold">TANGERINE</span> Flor de azahar, mandarina y canela.</li>
-            </ul>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Métodos</h3>
-            <ul className="space-y-4 text-sm font-light">
-              <li className="flex justify-between"><span>V60</span></li>
-              <li className="flex justify-between"><span>Chemex</span></li>
-              <li className="flex justify-between"><span>Sifón Japonés</span></li>
-            </ul>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Pastelería</h3>
-            <ul className="space-y-4 text-sm font-light">
-              <li>Cheesecake Tiramisú</li>
-              <li>Torta de Almojábana</li>
-              <li>Torta Chocomaracuyá</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
+     
       {/* SECCIÓN MAPA DIAGRAMADO */}
       <section className="py-24 px-6 bg-[#000000]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
