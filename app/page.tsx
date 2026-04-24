@@ -2,6 +2,7 @@
 
 import { Coffee, Cake, MapPin, Instagram, Clock, ExternalLink, Box } from 'lucide-react';
 import BoutiqueSection from '../components/menu/BoutiqueSection';
+import MenuNavigation from '../components/menu/MenuNavigation';
 
 export default function Page() {
   return (
@@ -42,7 +43,10 @@ export default function Page() {
           Instagram
         </a>
       </section>
-
+      
+      <div id="carta-completa">
+        <MenuNavigation />
+      </div>
       {/* SECCIÓN TIENDA */}
       <section id="boutique">
         <BoutiqueSection />
