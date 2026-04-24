@@ -123,7 +123,7 @@ export default function Page() {
 
           <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all border border-[#FDBE73]/20">
             <iframe 
-              src="https://maps.app.goo.gl/Ypqhskh7Pg5dA3KfA?g_st=aw" 
+              src="https://maps.app.goo.gl/XTxZGDsbDzGv72UW6" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
