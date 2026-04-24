@@ -8,7 +8,7 @@ export default function Page() {
       <div className="relative w-64 h-64 md:w-80 md:h-80 mb-12">
         {/* Aquí puedes colocar la imagen una vez la subas a GitHub */}
         <img 
-          src="./public/LogoKhumeia.png" 
+          src="/LogoKhumeia.png" 
           alt="Khumeia Café Logo"
           className="rounded-full shadow-[0_0_50px_rgba(253,190,115,0.2)]"
         />
