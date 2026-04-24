@@ -1,8 +1,7 @@
 import './globals.css'
 import { Cinzel, Montserrat } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'; // 1. Importación necesaria
+import { Analytics } from '@vercel/analytics/react'
 
-// Configuración de fuentes
 const cinzel = Cinzel({ 
   subsets: ['latin'],
   variable: '--font-cincoyo',
@@ -15,14 +14,14 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: 'Khumeia Café | Café de Origen y Pastelería Artesanal en Pereira',
-  description: 'Descubre la alquimia del café de origen y métodos de filtrado en Galicia Mall Plaza Local 220, Pereira.',
+  description: 'Descubre la alquimia del café de origen y métodos de filtrado en Galicia Mall Plaza Local 220.',
   keywords: ['café de especialidad Pereira', 'café de origen', 'métodos de filtrado', 'pastelería artesanal', 'Galicia Mall Plaza'],
   openGraph: {
     title: 'Khumeia Café | La Alquimia del Origen',
     description: 'Café de origen, métodos de filtrado y pastelería artesanal en el corazón de Galicia Mall Plaza.',
     url: 'https://khumeia.cafe',
     siteName: 'Khumeia Café',
-    images: [{ url: '/LogoKhumeia.png' }], // Ruta corregida según tu solicitud
+    images: [{ url: '/LogoKhumeia.png' }],
     locale: 'es_CO',
     type: 'website',
   },
@@ -33,7 +32,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Datos estructurados para Google Maps (SEO Local)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CafeOrCoffeeShop",
@@ -41,7 +39,7 @@ export default function RootLayout({
     "image": "https://khumeia.cafe/LogoKhumeia.png",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Galicia Mall Plaza Local 220", // Basado en tu carta 
+      "streetAddress": "Galicia Mall Plaza Local 220",
       "addressLocality": "Pereira",
       "addressRegion": "Risaralda",
       "addressCountry": "CO"
@@ -51,7 +49,7 @@ export default function RootLayout({
       "latitude": 4.8113455,
       "longitude": -75.796803
     }
-  }
+  };
 
   return (
     <html lang="es" className={`${cinzel.variable} ${montserrat.variable}`}>
@@ -64,7 +62,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-[#000000] text-[#FDBE73]">
         {children}
-        <Analytics /> {import { Analytics } from "@vercel/analytics/next"}
+        <Analytics />
       </body>
     </html>
   )
