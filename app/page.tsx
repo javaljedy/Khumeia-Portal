@@ -1,4 +1,4 @@
-'use client'; // Añadimos esto para asegurar compatibilidad con componentes interactivos
+'use client';
 
 import { Coffee, Cake, MapPin, Instagram, Clock, ExternalLink, Box } from 'lucide-react';
 
@@ -6,13 +6,13 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-[#000000] text-[#FDBE73] font-sans selection:bg-[#F7941D] selection:text-[#420B00]">
       
-      {/* SECCIÓN HERO: LOGO Y ESTADO ACTUAL */}
+      {/* SECCIÓN HERO */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
-        <div className="relative w-64 h-64 md:w-80 md:h-80 mb-8 transition-transform hover:scale-105 duration-700">
+        <div className="relative w-64 h-64 md:w-80 md:h-80 mb-8">
           <img 
             src="/LogoKhumeia.png" 
             alt="Khumeia Café Logo"
-            className="rounded-full shadow-[0_0_70px_rgba(253,190,115,0.15)] object-cover"
+            className="rounded-full shadow-[0_0_70px_rgba(253,190,115,0.15)] object-cover border border-[#FDBE73]/10"
           />
         </div>
         
@@ -27,66 +27,69 @@ export default function Page() {
               Galicia Mall Plaza • Local 220
             </p>
           </div>
-          <span className="bg-[#F7941D]/10 text-[#F7941D] text-[10px] px-3 py-1 rounded-full border border-[#F7941D]/20 uppercase tracking-[0.3em] font-bold mt-2">
-            ¡Ya estamos abiertos!
+          <span className="text-[10px] px-3 py-1 border border-[#F7941D]/40 rounded-full uppercase tracking-widest text-[#F7941D]">
+            Abierto • El Ritual de la Alquimia
           </span>
         </div>
 
-        <p className="text-[#FDBE73]/70 font-light max-w-xl italic text-lg md:text-xl leading-relaxed mb-10">
-          "El mejor café del campo en tu taza[cite: 2]. Una experiencia de alquimia sensorial en el corazón de Pereira."
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-4">
-          <a 
-            href="https://www.instagram.com/khumeiacafe" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-[#FDBE73] text-[#420B00] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#F7941D] transition-all shadow-lg"
-          >
-            <Instagram size={20} />
-            Instagram
-          </a>
-        </div>
+        <a 
+          href="https://www.instagram.com/khumeiacafe" 
+          target="_blank"
+          className="flex items-center gap-3 bg-[#FDBE73] text-[#420B00] px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:scale-105 transition-transform"
+        >
+          <Instagram size={20} />
+          Instagram
+        </a>
       </section>
 
-      {/* SECCIÓN MÉTODOS Y CAFÉS (Datos de la Carta) */}
+      {/* SECCIÓN CARTA (BASADA EN TU DOCUMENTO) */}
       <section className="py-24 bg-[#050505] px-6 border-y border-[#FDBE73]/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Métodos</h3>
-              <ul className="space-y-3 text-sm font-light">
-                <li>V60: Acidez brillante [cite: 12]</li>
-                <li>Chemex: Claridad y notas florales [cite: 12]</li>
-                <li>Sifón Japonés: Perfil delicado [cite: 12]</li>
-              </ul>
-            </div>
-            <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Orígenes</h3>
-              <ul className="space-y-3 text-sm font-light">
-                <li>Gesha: Jazmín y lima [cite: 15]</li>
-                <li>Sudán Rumé: Arándano y miel de maple [cite: 15]</li>
-                <li>Tangerine: Mandarina y canela [cite: 15]</li>
-              </ul>
-            </div>
-            <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Acompañantes</h3>
-              <ul className="space-y-3 text-sm font-light">
-                <li>Cheesecake Tiramisú [cite: 38]</li>
-                <li>Torta de Almojábana [cite: 44]</li>
-                <li>Brownie con helado [cite: 35]</li>
-              </ul>
-            </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+          
+          <div className="space-y-6">
+            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Orígenes</h3>
+            <ul className="space-y-4 text-sm font-light">
+              <li><span className="block font-bold">SUDÁN RUMÉ</span> Arándano, regaliz y miel de maple.</li>
+              <li><span className="block font-bold">GESHA</span> Notas de jazmín, lima y té verde.</li>
+              <li><span className="block font-bold">TANGERINE</span> Flor de azahar, mandarina y canela.</li>
+            </ul>
           </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Métodos</h3>
+            <ul className="space-y-4 text-sm font-light">
+              <li className="flex justify-between"><span>V60</span> <span>$10.000</span></li>
+              <li className="flex justify-between"><span>Chemex</span> <span>$12.000</span></li>
+              <li className="flex justify-between"><span>Sifón Japonés</span> <span>$14.000</span></li>
+            </ul>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Pastelería</h3>
+            <ul className="space-y-4 text-sm font-light">
+              <li>Cheesecake Tiramisú</li>
+              <li>Torta de Almojábana</li>
+              <li>Torta Chocomaracuyá</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
-      {/* SECCIÓN MAPA */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="h-[400px] w-full grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700 border border-[#FDBE73]/20">
+      {/* SECCIÓN MAPA DIAGRAMADO */}
+      <section className="py-24 px-6 bg-[#000000]">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+          <div className="flex-1 text-left space-y-6">
+            <h2 className="text-5xl font-serif uppercase tracking-tighter">Visítanos</h2>
+            <p className="text-[#FDBE73]/70 leading-relaxed font-light">
+              Te esperamos en el corazón de Galicia Mall Plaza. <br />
+              Local 220, Segundo Piso. Pereira, Risaralda.
+            </p>
+          </div>
+          
+          <div className="flex-1 w-full h-[400px] grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-1000 border border-[#FDBE73]/20">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2443!2d-75.7968!3d4.8113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387df2d636013f%3A0x2305f24d4dc6ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1714000000000!5m2!1ses!2sco" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.0123!2d-75.796803!3d4.8113455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNDgnNDAuOCJOIDc1wrA0Nyc0OC41Ilc!5e0!3m2!1ses!2sco!4v1710000000000" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -97,8 +100,8 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="py-12 text-center opacity-40 text-[9px] tracking-[0.6em] uppercase">
-        Khumeia Café • Galicia Mall Plaza Local 220 
+      <footer className="py-12 border-t border-[#FDBE73]/10 text-center text-[10px] tracking-[0.4em] uppercase opacity-40">
+        Khumeia Café • Alquimia y Origen • 2026
       </footer>
     </div>
   );
