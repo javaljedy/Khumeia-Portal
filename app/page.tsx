@@ -121,17 +121,19 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all border border-[#FDBE73]/20">
+         {/* Contenedor del Mapa */}
+          <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700 border border-[#FDBE73]/20 shadow-2xl shadow-[#FDBE73]/5">
             <iframe 
-              src="https://maps.app.goo.gl/XTxZGDsbDzGv72UW6" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.103732434685!2d-75.79937802421375!3d4.81232814046187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387dee5632014f%3A0xed05f24dade3ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1715000000000!5m2!1ses!2sco" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen={true} 
-              loading="lazy"
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Khumeia Café - Local 220"
             ></iframe>
           </div>
-        </div>
       </section>
 
       <footer className="py-12 border-t border-[#FDBE73]/10 text-center opacity-40">
