@@ -1,7 +1,6 @@
 'use client';
 
 import { Coffee, Cake, MapPin, Instagram, Clock, ExternalLink, Box } from 'lucide-react';
-import BoutiqueSection from '../components/menu/BoutiqueSection';
 import MenuNavigation from '../components/menu/MenuNavigation';
 
 export default function Page() {
@@ -48,10 +47,7 @@ export default function Page() {
         <MenuNavigation />
       </div>
       {/* SECCIÓN TIENDA */}
-      <section id="boutique">
-        <BoutiqueSection />
-      </section>
-
+     
      
       {/* SECCIÓN MAPA DIAGRAMADO */}
       <section className="py-24 px-6 bg-[#000000]">
