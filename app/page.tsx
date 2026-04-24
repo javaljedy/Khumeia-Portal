@@ -58,9 +58,9 @@ export default function Page() {
           <div className="space-y-6">
             <h3 className="text-2xl font-serif uppercase text-[#F7941D] border-b border-[#F7941D]/20 pb-2">Métodos</h3>
             <ul className="space-y-4 text-sm font-light">
-              <li className="flex justify-between"><span>V60</span> <span>$10.000</span></li>
-              <li className="flex justify-between"><span>Chemex</span> <span>$12.000</span></li>
-              <li className="flex justify-between"><span>Sifón Japonés</span> <span>$14.000</span></li>
+              <li className="flex justify-between"><span>V60</span></li>
+              <li className="flex justify-between"><span>Chemex</span></li>
+              <li className="flex justify-between"><span>Sifón Japonés</span></li>
             </ul>
           </div>
 
