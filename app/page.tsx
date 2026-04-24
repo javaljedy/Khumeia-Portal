@@ -1,6 +1,7 @@
 'use client';
 
 import { Coffee, Cake, MapPin, Instagram, Clock, ExternalLink, Box } from 'lucide-react';
+import BoutiqueSection from '../components/menu/BoutiqueSection';
 
 export default function Page() {
   return (
@@ -42,7 +43,13 @@ export default function Page() {
         </a>
       </section>
 
+      {/* SECCIÓN TIENDA */}
+      <section id="boutique">
+        <BoutiqueSection />
+      </section>
+
       {/* SECCIÓN CARTA (BASADA EN TU DOCUMENTO) */}
+
       <section className="py-24 bg-[#050505] px-6 border-y border-[#FDBE73]/5">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           
