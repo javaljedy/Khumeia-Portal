@@ -15,10 +15,9 @@ export default function MenuNavigation() {
   ];
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-8 bg-black"> {/* Reducido de py-20 a py-8 */}
       <div className="max-w-6xl mx-auto px-6">
-        {/* Botones del Menú */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16 border-b border-[#FDBE73]/10 pb-8">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 border-b border-[#FDBE73]/10 pb-4">
           {categories.map((cat) => (
             <button
               key={cat.id}
