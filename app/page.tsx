@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'; // Añadimos esto para asegurar compatibilidad con componentes interactivos
+
 import { Coffee, Cake, MapPin, Instagram, Clock, ExternalLink, Box } from 'lucide-react';
 
 export default function Page() {
@@ -32,7 +33,7 @@ export default function Page() {
         </div>
 
         <p className="text-[#FDBE73]/70 font-light max-w-xl italic text-lg md:text-xl leading-relaxed mb-10">
-          "El mejor café del campo en tu taza. Una experiencia de alquimia sensorial en el corazón de Pereira."
+          "El mejor café del campo en tu taza[cite: 2]. Una experiencia de alquimia sensorial en el corazón de Pereira."
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -45,99 +46,59 @@ export default function Page() {
             <Instagram size={20} />
             Instagram
           </a>
-          <button className="flex items-center gap-3 border border-[#FDBE73]/30 text-[#FDBE73] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#FDBE73]/5 transition-all">
-            Ver Carta Completa
-          </button>
         </div>
       </section>
 
-      {/* SECCIÓN NUESTRA CARTA (MÉTODOS Y CAFÉS) */}
+      {/* SECCIÓN MÉTODOS Y CAFÉS (Datos de la Carta) */}
       <section className="py-24 bg-[#050505] px-6 border-y border-[#FDBE73]/5">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif uppercase tracking-[0.2em] mb-4">Nuestra Selección</h2>
-            <p className="text-[#F7941D] text-xs uppercase tracking-widest italic">Explora los perfiles de nuestra alquimia</p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Métodos de Filtrado  */}
             <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <div className="flex items-center gap-3 mb-6 text-[#F7941D]">
-                <Box size={24} />
-                <h3 className="text-xl font-serif uppercase">Métodos</h3>
-              </div>
-              <ul className="space-y-3 text-sm font-light text-[#FDBE73]/80">
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Chemex (Claridad)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>V60 (Complejidad)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Sifón Japonés (Delicado)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Prensa Francesa (Cuerpo)</span></li>
+              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Métodos</h3>
+              <ul className="space-y-3 text-sm font-light">
+                <li>V60: Acidez brillante [cite: 12]</li>
+                <li>Chemex: Claridad y notas florales [cite: 12]</li>
+                <li>Sifón Japonés: Perfil delicado [cite: 12]</li>
               </ul>
             </div>
-
-            {/* Cafés de Origen  */}
             <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <div className="flex items-center gap-3 mb-6 text-[#F7941D]">
-                <Coffee size={24} />
-                <h3 className="text-xl font-serif uppercase">Orígenes</h3>
-              </div>
-              <ul className="space-y-3 text-sm font-light text-[#FDBE73]/80">
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Gesha (Jazmín/Lima)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Sudán Rumé (Miel de Maple)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Tangerine (Mandarina)</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Catipoe (Vino/Frutos Rojos)</span></li>
+              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Orígenes</h3>
+              <ul className="space-y-3 text-sm font-light">
+                <li>Gesha: Jazmín y lima [cite: 15]</li>
+                <li>Sudán Rumé: Arándano y miel de maple [cite: 15]</li>
+                <li>Tangerine: Mandarina y canela [cite: 15]</li>
               </ul>
             </div>
-
-            {/* Pastelería Artesanal [cite: 33, 41, 47] */}
             <div className="p-8 border border-[#FDBE73]/10 bg-black/40">
-              <div className="flex items-center gap-3 mb-6 text-[#F7941D]">
-                <Cake size={24} />
-                <h3 className="text-xl font-serif uppercase">Pastelería</h3>
-              </div>
-              <ul className="space-y-3 text-sm font-light text-[#FDBE73]/80">
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Cheesecake Tiramisú</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Torta de Almojábana</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Torta Chocomaracuyá</span></li>
-                <li className="flex justify-between border-b border-[#FDBE73]/5 pb-1"><span>Brownie con Helado</span></li>
+              <h3 className="text-xl font-serif uppercase mb-6 text-[#F7941D]">Acompañantes</h3>
+              <ul className="space-y-3 text-sm font-light">
+                <li>Cheesecake Tiramisú [cite: 38]</li>
+                <li>Torta de Almojábana [cite: 44]</li>
+                <li>Brownie con helado [cite: 35]</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECCIÓN MAPA Y UBICACIÓN */}
+      {/* SECCIÓN MAPA */}
       <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <h2 className="text-4xl md:text-6xl font-serif uppercase tracking-tighter">Encuéntranos</h2>
-            <p className="text-[#FDBE73]/70 text-lg font-light leading-relaxed">
-              Estamos ubicados en la zona de mayor crecimiento de Pereira, dentro de <strong>Galicia Mall Plaza</strong>. Un espacio diseñado para disfrutar de la calma y la excelencia.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 text-[#FDBE73]">
-                <MapPin size={20} className="text-[#F7941D]" />
-                <span className="uppercase tracking-widest text-sm">Vía Cerritos, Pereira - Risaralda</span>
-              </div>
-            </div>
-          </div>
-
-         {/* Contenedor del Mapa */}
-          <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700 border border-[#FDBE73]/20 shadow-2xl shadow-[#FDBE73]/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="h-[400px] w-full grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700 border border-[#FDBE73]/20">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.103732434685!2d-75.79937802421375!3d4.81232814046187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387dee5632014f%3A0xed05f24dade3ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1715000000000!5m2!1ses!2sco" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2443!2d-75.7968!3d4.8113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387df2d636013f%3A0x2305f24d4dc6ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1714000000000!5m2!1ses!2sco" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Ubicación Khumeia Café - Local 220"
+              allowFullScreen 
+              loading="lazy"
             ></iframe>
           </div>
+        </div>
       </section>
 
-      <footer className="py-12 border-t border-[#FDBE73]/10 text-center opacity-40">
-        <p className="text-[9px] tracking-[0.6em] uppercase">Khumeia Café • Pereira • 2026</p>
+      <footer className="py-12 text-center opacity-40 text-[9px] tracking-[0.6em] uppercase">
+        Khumeia Café • Galicia Mall Plaza Local 220 
       </footer>
     </div>
   );
