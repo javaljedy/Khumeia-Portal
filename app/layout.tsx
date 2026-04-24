@@ -64,7 +64,7 @@ export default function RootLayout({
     "telephone": "+57XXXXXXXXXX", 
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Galicia Mall Plaza",
+      "streetAddress": "Cra 15 #140-15, Galicia Mall Plaza - Local 220",
       "addressLocality": "Pereira",
       "addressRegion": "Risaralda",
       "postalCode": "660001",
