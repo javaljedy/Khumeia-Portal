@@ -105,34 +105,38 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECCIÓN UBICACIÓN DETALLADA  */}
+      {/* SECCIÓN MAPA Y UBICACIÓN */}
       <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center">
-          <div className="flex-1 space-y-6">
-            <h2 className="text-4xl font-serif uppercase">Encuéntranos</h2>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <h2 className="text-4xl md:text-6xl font-serif uppercase tracking-tighter">Encuéntranos</h2>
+            <p className="text-[#FDBE73]/70 text-lg font-light leading-relaxed">
+              Estamos ubicados en la zona de mayor crecimiento de Pereira, dentro de <strong>Galicia Mall Plaza</strong>. Un espacio diseñado para disfrutar de la calma y la excelencia.
+            </p>
             <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <MapPin className="text-[#F7941D] mt-1" size={20} />
-                <div>
-                  <p className="font-bold">Galicia Mall Plaza</p>
-                  <p className="text-[#FDBE73]/60 font-light">Local 220, Pereira - Risaralda</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <Clock className="text-[#F7941D] mt-1" size={20} />
-                <div>
-                  <p className="font-bold">Horario</p>
-                  <p className="text-[#FDBE73]/60 font-light italic">Visítanos y vive el ritual todos los días.</p>
-                </div>
+              <div className="flex items-center gap-4 text-[#FDBE73]">
+                <MapPin size={20} className="text-[#F7941D]" />
+                <span className="uppercase tracking-widest text-sm">Vía Cerritos, Pereira - Risaralda</span>
               </div>
             </div>
+            <a 
+              href="https://maps.app.goo.gl/TwEy1u59OI4Rd__GTU3yBeM" 
+              target="_blank" 
+              className="inline-flex items-center gap-2 text-[#F7941D] hover:text-[#FDBE73] transition-colors uppercase tracking-[0.2em] text-xs font-bold"
+            >
+              Abrir en Google Maps <ExternalLink size={14} />
+            </a>
           </div>
-          
-          <div className="flex-1 h-[300px] w-full border border-[#FDBE73]/20 grayscale hover:grayscale-0 transition-all duration-500">
-             {/* Simulación de mapa o imagen del Mall */}
-             <div className="w-full h-full bg-[#111] flex items-center justify-center text-[#FDBE73]/20 italic text-xs uppercase tracking-[0.3em]">
-               Google Maps Galicia Mall Plaza
-             </div>
+
+          <div className="h-[400px] w-full rounded-none overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all border border-[#FDBE73]/20">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.241!2d-75.796803!3d4.8113455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387dee6232014f%3A0x6305f24d4dd2ff77!2sGalicia%20Mall%20Plaza!5e0!3m2!1ses!2sco!4v1715000000000!5m2!1ses!2sco" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
