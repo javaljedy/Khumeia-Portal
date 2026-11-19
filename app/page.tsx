@@ -11,7 +11,7 @@ export default function Page() {
       <section className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
         <div className="relative w-64 h-64 md:w-80 md:h-80 mb-8">
           <img 
-            src="/LogoKhumeia.png" 
+            src="/LogoKhumeia340.png" 
             alt="Khumeia Café Logo"
             className="rounded-full shadow-[0_0_70px_rgba(253,190,115,0.15)] object-cover border border-[#FDBE73]/10"
           />
